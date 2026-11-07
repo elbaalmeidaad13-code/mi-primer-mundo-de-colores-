@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#fff4dc">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Mis colores">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<title>Mi primer mundo de colores</title>
+</head>
+<body>
+<main class="app">
+  <header>
+    <div class="mascot" aria-hidden="true">🐻</div>
+    <div><h1>Mi primer mundo<br>de colores</h1><p class="subtitle">¡Vamos a jugar y aprender!</p></div>
+    <button class="sound-toggle" id="soundToggle" aria-label="Activar o desactivar sonido">🔊</button>
+  </header>
+  <section id="home" class="screen active">
+    <div class="welcome">¡Hola, peque! <span>🌈</span></div>
+    <p class="intro">Toca un juego para empezar.</p>
+    <div class="menu">
+      <button class="menu-card" data-game="learn"><span>🎨</span><b>Aprende los colores</b><small>Conócelos uno a uno</small></button>
+      <button class="menu-card" data-game="find"><span>👆</span><b>Encuentra el color</b><small>¡Toca el color que escuches!</small></button>
+      <button class="menu-card" data-game="objects"><span>🍎</span><b>Toca el objeto</b><small>Busca el dibujo correcto</small></button>
+      <button class="menu-card" data-game="sort"><span>🧺</span><b>Elige por su color</b><small>¡Vamos a encontrarlo!</small></button>
+    </div>
+  </section>
+  <section id="game" class="screen">
+    <button class="back" id="back">← Volver</button>
+    <div class="game-title" id="gameTitle">¡A jugar!</div>
+    <div class="prompt" id="prompt" aria-live="polite">Toca para empezar</div>
+    <div class="play-area" id="playArea"></div>
+    <button class="repeat" id="repeat">🔁 Repetir</button>
+    <div class="feedback" id="feedback" aria-live="polite"></div>
+    <button class="next hidden" id="next">Siguiente ➜</button>
+  </section>
+  <footer>Juega acompañado de una persona adulta 💛</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
